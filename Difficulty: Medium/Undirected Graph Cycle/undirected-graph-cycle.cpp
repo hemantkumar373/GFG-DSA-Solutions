@@ -4,16 +4,25 @@ using namespace std;
 
 // } Driver Code Ends
 class Solution {
-  // Solved Using DFS
+  // Solved Using BFS
   private:
-    bool dfs(int node, int parent, int vis[], vector<int> adj[]){
-        vis[node] = 1;
+    bool bfs(int src, int vis[], vector<int> adj[]){
+        vis[src] = 1;
         
-        for(auto adjNode : adj[node]){
-            if(!vis[adjNode]){
-                if(dfs(adjNode,node,vis,adj) == true) return true;
+        queue<pair<int,int>> q;
+        q.push({src,-1});
+        while(!q.empty()){
+            int node = q.front().first;
+            int parent = q.front().second;
+            q.pop();
+            
+            for(auto adjNode : adj[node]){
+                if(!vis[adjNode]){
+                    vis[adjNode] = 1;
+                    q.push({adjNode,node});
+                }
+                else if(parent != adjNode) return true;
             }
-            else if(adjNode != parent) return true;
         }
         return false;
     }
@@ -24,7 +33,7 @@ class Solution {
         
         for(int i=0; i<V; i++){
             if(!vis[i]){
-                if(dfs(i,-1,vis,adj) == true) return true;
+                if(bfs(i,vis,adj)) return true;
             }
         }
         return false;
