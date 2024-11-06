@@ -9,14 +9,16 @@ using namespace std;
 // User function Template for C++
 
 // Back-end complete function Template for C++
+
 class Solution {
   public:
     long long solve(vector<int>& bt) {
+        sort(bt.begin(), bt.end());
         int n = bt.size();
-        sort(bt.begin(),bt.end());
         long long waitTime = 0;
         long long totalTime = 0;
-        for(int i=0; i<n; i++){
+        
+        for(int i = 0; i < bt.size(); i++){
             waitTime += totalTime;
             totalTime += bt[i];
         }
@@ -39,7 +41,9 @@ int main() {
         Solution obj;
         long long ans = obj.solve(bt);
         cout << ans << "\n";
-    }
+    
+cout << "~" << "\n";
+}
     return 0;
 }
 // } Driver Code Ends
