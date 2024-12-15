@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/set-matrix-zeroes/1">Set Matrix Zeroes</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">You are given a 2D matrix <strong>mat</strong>[][] of size </span><span style="font-size: 18px;">n×m.&nbsp;</span><span style="font-size: 18px;">The task is to modify the matrix such that if mat[i][j] is 0, all the elements in the&nbsp;</span><span style="font-size: 18px;">i-th row and </span><span style="font-size: 18px;">j-th column are set to 0 </span><span style="font-size: 18px;">and do it in <strong>constant space complexity</strong>.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>mat[][] = [[1, 1, 1],<br>                [1, 0, 1],<br>                [1, 1, 1]]
+<strong>Output:</strong> [[1, 0, 1],<br>        [0, 0, 0],<br>        [1, 0, 1]]
+<strong>Explanation:</strong> <br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/880852/Web/Other/blobid0_1732623844.png" width="524" height="233"><br></span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>mat[][] = [[0, 1, 2, 0], <br>                [3, 4, 5, 2],<br>                [1, 3, 1, 5]]
+<strong>Output:</strong> [[0, 0, 0, 0],<br>        [0, 4, 5, 0],<br>        [0, 3, 1, 0]]
+<strong>Explanation:</strong> </span><span style="font-size: 18px;">There are zeroes present in the 1st row at 1st column and 4th column.</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ n, </span><span style="font-size: 18px;">m</span><span style="font-size: 18px;"> ≤ 800</span><sup><br></sup><span style="font-size: 18px;">0 ≤ mat[i][j] ≤ 10<sup>3</sup></span></p></div>
