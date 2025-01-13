@@ -1,42 +1,55 @@
 //{ Driver Code Starts
-//Initial template for C++
+#include <bits/stdc++.h>
 
-#include<bits/stdc++.h>
 using namespace std;
-// int maxArea(int A[], int len);
+
 
 // } Driver Code Ends
-//User function template for C++
-long long maxArea(long long A[], int len)
-{
-    int left = 0, right = len - 1;
-    long long maxArea = 0;
-    
-    while(left <= right){
-        maxArea = max(maxArea, min(A[left], A[right]) * (right - left));
-        if(A[left] < A[right]) left++;
-        else right--;
+class Solution {
+  public:
+    int maxWater(vector<int> &arr) {
+        int i = 0, j = arr.size() - 1;
+        int maxWater = 0;
+        
+        while (i < j) {
+            int water = (j - i) * min(arr[i], arr[j]);
+            maxWater = max(maxWater, water);
+            
+            if (arr[i] < arr[j]) {
+                i++;
+            }
+            else {
+                j--;
+            }
+        }
+        
+        return maxWater;
     }
-    return maxArea;
-}
+};
 
 //{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+    cin.ignore();
+    while (t--) {
+        vector<int> arr;
+        string input;
 
-// Driver code
-int main()
-{
-	int t;
-	cin>>t;
-	while(t--)
-    {
-        int n;
-        cin>>n;
-        long long arr[n];
-        for(int i=0;i<n;i++)
-            cin>>arr[i];
-        cout<<maxArea(arr,n)<<endl;
+        // Read first array
+        getline(cin, input);
+        stringstream ss(input);
+        int number;
+        while (ss >> number) {
+            arr.push_back(number);
+        }
+
+        Solution ob;
+        int res = ob.maxWater(arr);
+
+        cout << res << endl << "~" << endl;
     }
-return 0;
+    return 0;
 }
 
 // } Driver Code Ends
