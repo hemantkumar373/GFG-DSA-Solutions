@@ -1,0 +1,13 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/k-largest-elements4206/1">k largest elements</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO" style="user-select: auto;"><p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;">Given an array <strong style="user-select: auto;">arr[]</strong> of positive integers and an integer <strong style="user-select: auto;">k</strong>, Your task is to return <strong style="user-select: auto;">k largest elements </strong>in decreasing order.&nbsp;</span></p>
+<p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Examples:</strong></span></p>
+<pre style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Input: </strong>arr[] = [12, 5, 787, 1, 23], k = 2
+<strong style="user-select: auto;">Output:</strong> [787, 23]
+<strong style="user-select: auto;">Explanation:</strong> 1st largest element in the array is 787 and second largest is 23.
+</span></pre>
+<pre style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Input:</strong> arr[] = [1, 23, 12, 9, 30, 2, 50], k = 3 
+<strong style="user-select: auto;">Output:</strong> [50, 30, 23]
+<strong style="user-select: auto;">Explanation:</strong> Three Largest elements in the array are 50, 30 and 23.<br style="user-select: auto;"></span></pre>
+<pre style="user-select: auto;"><span style="font-size: 14pt; user-select: auto;"><strong style="user-select: auto;">Input:</strong> arr[] = [12, 23], k = 1
+<strong style="user-select: auto;">Output:</strong> [23]
+<strong style="user-select: auto;">Explanation:</strong> 1st Largest element in the array is 23.</span></pre>
+<p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Constraints:</strong><br style="user-select: auto;">1 ≤ k ≤ arr.size() ≤ 10<sup style="user-select: auto;">6</sup><br style="user-select: auto;">1 ≤ arr[i] ≤ 10<sup style="user-select: auto;">6</sup></span><br style="user-select: auto;">&nbsp;</p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>Samsung</code>&nbsp;<code>Walmart</code>&nbsp;<code>Google</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Sorting</code>&nbsp;<code>Heap</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Algorithms</code>&nbsp;
